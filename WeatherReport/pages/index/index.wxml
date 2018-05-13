@@ -1,0 +1,34 @@
+<view class="weather-wrapper">
+  <view class="location-wrapper">
+    <view class="current-location">
+      <image src="/images/location-icon.png" class="location-image"></image>
+      <view class="current-city" bindtap="getLocation">{{city}}</view>
+    </view>
+    <!-- <view class="get-location" bindtap="getLocation">获取当前位置</view> -->
+  </view>
+  <view class="temperature">{{temperature}}°</view>
+  <view class="temperature-desc">{{weather}}</view>
+  <view class="weather-today-wrapper" bindtap='onTapWeatherToday'>
+    <view class="weather-today">
+      今日天气：{{today.maxTemp}}° / {{today.minTemp}}°
+    </view>
+    <image src="/images/arrow.png" class="weather-today-img"></image>
+  </view>
+
+  <image src='{{img_src}}' class="weather-img" mode = "scaleToFill"></image>
+</view>
+<view class="future-report">
+  <view class="future-title-wrapper">
+    <image class="future-title-icon" src="/images/time-icon.png"></image>
+    <view class='future-title'>未来24小时天气预测</view>
+  </view>
+  <scroll-view scroll-x>
+    <view class="future-body-wrapper">
+      <view wx:for="{{weatherFuture}}" class='future-detail'>
+        <view class="future-detail-hour">{{item.hour}}</view>
+        <image class="future-detail-icon" src="{{item.img_src}}" alt="item.weather"></image>
+        <view class="future-detail-temp">{{item.temp}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

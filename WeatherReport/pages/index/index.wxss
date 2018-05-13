@@ -1,0 +1,123 @@
+.weather-wrapper{
+  position: relative;
+  padding-top: 174rpx;
+  padding-bottom: 250rpx;
+}
+.temperature{
+  text-align: center;
+  font-size: 200rpx;
+  line-height: 280rpx;
+  opacity: .8;
+}
+/*当前位置*/
+.location-wrapper{
+  position: absolute;
+  top: 20rpx;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 30rpx;
+}
+.current-location{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10rpx;
+  color: #777;
+}
+.location-image{
+  width: 21rpx;
+  height: 30rpx;
+}
+.current-city{
+  height: 30rpx;
+  line-height: 30rpx;
+  margin-left: 10rpx;
+}
+.get-location{
+  margin-top: 10rpx;
+  color: #777;
+}
+/*天气描述 weather-description*/
+.temperature-desc{
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 56rpx;
+}
+
+.weather-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.weather-today-wrapper{
+  position: absolute;
+  bottom: 20rpx;
+  left: 20rpx;
+  right: 20rpx;
+  border-top: 1rpx solid rgba(200,200,200,.5);
+  padding-top: 20rpx;
+  display: flex;
+}
+.weather-today{
+  height: 42rpx;
+  width: 710rpx;
+  line-height: 42rpx;
+  font-size: 30rpx;
+  color: #555;
+}
+.weather-today-img{
+  width: 20rpx;
+  height: 30rpx;
+  margin: 6rpx 20rpx 0 0;
+}
+
+/*未来天气预测*/
+.future-title-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40rpx 0 35rpx;
+}
+.future-title-icon{
+  margin-right: 10rpx;
+  width: 36rpx;
+  height: 28rpx;
+}
+.future-title{
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: .5;
+}
+
+.future-body-wrapper{
+  display: flex;
+}
+.future-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0; /*不压缩列表项，强制设置每个item宽度*/
+  width: 150rpx;
+  font-size: 36rpx;
+  line-height: 42rpx;
+}
+.future-detail-icon{
+  width: 35rpx;
+  height: 35rpx;
+  margin: 20rpx 0;
+}
+
+.future-detail-hour{
+  font-size: 24rpx;
+  color: #777;
+}
+
+.future-detail-temp{
+  font-size: 30rpx;
+  color: #333;
+}

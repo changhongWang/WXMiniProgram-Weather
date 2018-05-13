@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#cbeefd",
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "天气家",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  }
+}

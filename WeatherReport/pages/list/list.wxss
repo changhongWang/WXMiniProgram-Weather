@@ -1,0 +1,38 @@
+/* pages/list/list.wxss */
+
+.future-detail-wrapper{
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+.future-detail{
+  display: flex;
+  justify-content: space-between;
+  width: 700rpx;
+  padding: 10rpx 0;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+  font-size: 30rpx;
+  color: #555;
+}
+.future-detail:last-child{
+  border: none;
+}
+.future-detail-date p{
+  display: block;
+  height: 42rpx;
+  line-height: 42rpx;
+}
+
+.future-detail-temperature {
+  font-size: 30rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  width: 200rpx;
+  text-align: center;
+}
+.future-detail-weather-icon{
+  width: 84rpx;
+  height: 84rpx;
+}

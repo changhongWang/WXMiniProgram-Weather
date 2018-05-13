@@ -1,0 +1,15 @@
+<!--pages/list/list.wxml-->
+<view class='future-detail-wrapper'>
+  <view wx:for="{{futureDetail}}" class='future-detail'>
+    <view class='future-detail-date'>
+      <p>{{item.weekDay}}</p>
+      <p>2018-03-31</p>
+    </view>
+
+    <view class='future-detail-temperature'>
+      {{item.minTemp}}° - {{item.maxTemp}}°
+    </view>
+
+    <image class='future-detail-weather-icon' src='/images/sunny-icon.png'></image>
+  </view>
+</view>
